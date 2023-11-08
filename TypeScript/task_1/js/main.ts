@@ -22,10 +22,42 @@ interface printTeacherFunction {
 function printTeacher (firstName: Teacher["firstName"], lastName: Teacher["lastName"]) {
   const sliptFirstName = firstName.split('');
   const firstElement = sliptFirstName[0];
-  return (`${firstElement}.${lastName}`)
+  return (`${firstElement}.${lastName}`);
 }
 
-/*
+interface IStudentClass {
+  firstName: string,
+  lastName: string,
+}
+
+class StudentClass implements IStudentClass{
+  firstName: string;
+  lastName: string;
+
+  constructor (firstName: string, lastName: string) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+  }
+ 
+  workOnHomework() {
+    return "Currently working";
+  }
+  displayName() {
+    return this.firstName;
+  }
+}
+
+/*  
+//Exercise4:
+const student = new StudentClass("John", "Doe"); // create an instance
+
+const homeworkStatus = student.workOnHomework(); // call the methods
+const displayName = student.displayName();
+
+console.log("Homework status:", homeworkStatus); // show the results
+console.log("Display name:", displayName);
+
+
 //Exercise3:
 const printTeacher1 = printTeacher("John", "Doe")
 console.log(printTeacher1)
