@@ -20,7 +20,7 @@ class Director implements DirectorInterface{
     return "Getting a coffee break";
   };
   workDirectorTasks() {
-    return "the string Getting to director tasks";
+    return "Getting to director tasks";
   };
 }
 
@@ -44,7 +44,30 @@ function createEmployee(salary: number | string) {
   return new Director();
 };
 
+function isDirector(employee: Teacher | Director): employee is Director {
+  return employee instanceof Director;
+}
+
+function executeWork(employee: Teacher | Director) {
+  if (isDirector(employee)) {
+    const director = new Director();
+    const directorCall = director.workDirectorTasks();
+    return directorCall;
+  } else {
+    const teacher = new Teacher();
+    const teacherCall = teacher.workTeacherTasks();
+    return teacherCall;
+  }
+}
+
 /*
+//Exercise 2
+const employee1 = createEmployee(200);
+const employee2 = createEmployee(1000);
+
+console.log(executeWork(employee1)); // Output: Getting to work
+console.log(executeWork(employee2)); //Output: Getting to director tasks
+
 //Exercise 1
 console.log(createEmployee(200));
 console.log(createEmployee(1000));
