@@ -52,23 +52,35 @@ function executeWork(employee: Teacher | Director) {
   if (isDirector(employee)) {
     const director = new Director();
     const directorCall = director.workDirectorTasks();
-    return directorCall;
+    console.log(directorCall);
   } else {
     const teacher = new Teacher();
     const teacherCall = teacher.workTeacherTasks();
-    return teacherCall;
+    console.log(teacherCall);
+  }
+}
+
+type Subjects = "Math" | "History";
+
+function teachClass(todayClass: Subjects) {
+  if (todayClass === "Math") {
+    console.log("Teaching Math");
+  } else {
+    console.log("Teaching History");
   }
 }
 
 /*
-//Exercise 2
-const employee1 = createEmployee(200);
-const employee2 = createEmployee(1000);
+Exercise 7:
+teachClass('Math'); // Teaching Math
+teachClass('History'); // Teaching History
 
-console.log(executeWork(employee1)); // Output: Getting to work
-console.log(executeWork(employee2)); //Output: Getting to director tasks
 
-//Exercise 1
+//Exercise 6
+executeWork(createEmployee(200)); // Getting to work
+executeWork(createEmployee(1000)); //Getting to director tasks
+
+//Exercise 5
 console.log(createEmployee(200));
 console.log(createEmployee(1000));
 console.log(createEmployee('$500'));
