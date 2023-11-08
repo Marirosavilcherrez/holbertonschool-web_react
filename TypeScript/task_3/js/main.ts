@@ -17,9 +17,8 @@ const updatedRow: RowElement = {
   age: 23,
 };
 
-console.log (newRowID);
-console.log(updatedRow);
-
+/*
+//Exercise 8
 const obj = {firstName: "Guillaume", lastName: "Salva"};
 CRUD.insertRow(obj)
 // Insert row {firstName: "Guillaume", lastName: "Salva"}
@@ -30,3 +29,4 @@ CRUD.updateRow(newRowID, updatedRow);
 
 CRUD.deleteRow(125);
 // Delete row id 125
+*/
