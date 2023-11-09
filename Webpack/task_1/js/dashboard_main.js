@@ -1,5 +1,3 @@
-/* dashboard_main.js */
-/* Manipulation DOM */
 import $ from "jquery";
 import debounce from "lodash/debounce";
 
