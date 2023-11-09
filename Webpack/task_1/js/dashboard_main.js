@@ -1,5 +1,5 @@
 import $ from "jquery";
-import debounce from "lodash/debounce";
+import _ from 'lodash';
 
 $(document).ready(function () {
     var count = 0;
