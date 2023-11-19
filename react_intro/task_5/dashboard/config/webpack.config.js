@@ -1,4 +1,5 @@
 // webpack.config.js
+
 const path = require('path');
 
 module.exports = {
@@ -20,7 +21,15 @@ module.exports = {
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
-        type: 'asset/resource',
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+            },
+          },
+          'image-webpack-loader', 
+        ],
       },
     ],
   },
