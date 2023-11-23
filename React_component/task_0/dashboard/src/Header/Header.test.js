@@ -12,10 +12,10 @@ it('renders header', () => {
   expect(wrapper.find('header.header').exists()).toEqual(true);
 });
 
-it('renders header h1', () => {
+it('renders header', () => {
   expect(wrapper.find('header.header h1').exists()).toEqual(true);
 });
 
-it('renders header img', () => {
+it('renders header', () => {
   expect(wrapper.find('header.header img').exists()).toEqual(true);
 });
