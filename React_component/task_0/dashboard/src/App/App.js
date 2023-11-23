@@ -5,7 +5,7 @@ import Login from '../Login/Login';
 import Footer from '../Footer/Footer';
 import Header from '../Header/Header';
 import CourseList from '../CourseList/CourseList';
-import { getLatestNotification } from '../utils';
+import { getLatestNotification } from '../utils/utils';
 
 const listCourse = [
   { id: 1, name: 'ES6', credit: 60 },

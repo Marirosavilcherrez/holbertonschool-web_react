@@ -1,0 +1,21 @@
+.App-header {
+    background-color: #FFFFFF;
+    border-bottom: 3px solid red;
+    min-height: 30vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+  }
+  
+  .App-header h1 {
+    flex-direction: row;
+    color: red;
+    font-size: 35px;
+    font-family: sans-serif;
+  }
+  
+  .App-logo {
+    height: 25vmin;
+    margin-top: 0%;
+  }
