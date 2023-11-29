@@ -74,7 +74,7 @@ class App extends Component {
   }
 }
 
-const styles = StyleSheet.create ({
+const styles = StyleSheet.create({
   footer: {
     width: '100%',
     position: 'fixed',
