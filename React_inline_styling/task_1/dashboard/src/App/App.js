@@ -51,7 +51,7 @@ class App extends Component {
         {/* Display header */}
         <Header />
         {/* Display CourseList or Login based on isLoggedIn */}
-        <div className={css(styles.bodyStyle)}>
+        <div className={css(styles.body)}>
         {isLoggedIn ? (
           <BodySectionWithMarginBottom title="Course list">
             <CourseList listCourses={listCourses} />
@@ -90,7 +90,7 @@ const styles = StyleSheet.create ({
     flexDirection: 'column',
   },
   
-  bodyStyle: {
+  body: {
     justifyContent: "left",
   }
 })
