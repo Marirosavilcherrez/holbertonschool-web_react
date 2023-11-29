@@ -10,6 +10,23 @@ import BodySectionWithMarginBottom from '../BodySection/BodySectionWithMarginBot
 import BodySection from '../BodySection/BodySection';
 import { StyleSheet, css } from 'aphrodite'
 
+const styles = StyleSheet.create ({
+  footer: {
+    width: '100%',
+    position: 'fixed',
+    bottom: 0,
+    textAlign: 'center',
+    fontStyle: 'italic',
+    borderTop: 'solid #e0344a',
+    zIndex: '1000',
+  },
+  wrapper: {
+    height: '100vh',
+    display: 'flex',
+    flexDirection: 'column',
+  }
+})
+
 const listCourses = [
   { id: 1, name: 'ES6', credit: 60 },
   { id: 2, name: 'Webpack', credit: 20 },
@@ -71,23 +88,6 @@ class App extends Component {
     );
   }
 }
-
-const styles = StyleSheet.create ({
-  footer: {
-    width: '100%',
-    position: 'fixed',
-    bottom: 0,
-    textAlign: 'center',
-    fontStyle: 'italic',
-    borderTop: 'solid #e0344a',
-    zIndex: '1000',
-  },
-  wrapper: {
-    height: '100vh',
-    display: 'flex',
-    flexDirection: 'column',
-  }
-})
 
 // Default props for App component
 App.defaultProps = {
