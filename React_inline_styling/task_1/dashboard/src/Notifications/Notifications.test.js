@@ -2,6 +2,9 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import Notifications from './Notifications';
+import { StyleSheetTestUtils } from 'aphrodite';
+
+StyleSheetTestUtils.suppressStyleInjection();
 
 // Mock data for testing
 const mockNotifications = [
