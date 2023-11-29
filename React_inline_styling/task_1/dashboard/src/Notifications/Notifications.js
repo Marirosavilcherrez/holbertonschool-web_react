@@ -34,7 +34,7 @@ class Notifications extends Component {
         <div className="menuItem">Your notifications</div>
         {/* Conditional rendering based on displayDrawer prop */}
         {displayDrawer === true ? (
-          <div className={css(styles.notification)}>
+          <div className={css(styles.NotificationStyle)}>
             <button 
               style={{
                 position: 'absolute',
@@ -83,7 +83,7 @@ class Notifications extends Component {
   }
 }
 
-const styles = StyleSheet.create ({
+const styles = StyleSheet.create({
   NotificationStyle: {
     border: '2px dashed red',
     paddingtop: '10px',
