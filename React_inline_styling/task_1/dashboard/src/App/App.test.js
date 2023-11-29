@@ -2,6 +2,9 @@ import { mount, shallow } from 'enzyme';
 import React from 'react';
 import App from './App';
 import { handleKeyDown } from './App';
+import { StyleSheetTestUtils } from 'aphrodite';
+
+StyleSheetTestUtils.suppressStyleInjection();
 
 describe('<App />', () => {
   it('renders without crashing', () => {

@@ -5,10 +5,10 @@ import { StyleSheet, css } from 'aphrodite';
 const Header = () => {
     
   return (
-      <div className= {css(styles.HeaderStyle)}>
+      <header className= {css(styles.HeaderStyle)}>
           <img src={logo} className={css(styles.logoStyle)} alt="logo"/> 
           <h1 className= {css(styles.titleStyle)}>School dashboard</h1>
-      </div>
+      </header>
    )
 }
 

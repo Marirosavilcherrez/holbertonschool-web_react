@@ -10,7 +10,7 @@ const BodySectionWithMarginBottom = (props) => {
     
     return (
         // Render a div with the specified class
-        <div className={css(styles.marginStyle)} >
+        <div className={css(styles.BodySectionStyle)} >
             {/* Use the spread operator on the BodySection component */}
             <BodySection {...props}>
                 {/* Render the children within the BodySection */}
@@ -20,8 +20,8 @@ const BodySectionWithMarginBottom = (props) => {
     );
 }
 
-const styles = StyleSheet.create ({
-  marginStyle: {
+const styles = StyleSheet.create({
+  BodySectionStyle: {
     marginbottom: '40px',
   }
 })

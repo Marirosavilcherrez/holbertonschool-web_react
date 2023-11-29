@@ -3,6 +3,9 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import BodySectionWithMarginBottom from './BodySectionWithMarginBottom';
 import BodySection from './BodySection';
+import { handleKeyDown } from './App';
+
+StyleSheetTestUtils.suppressStyleInjection();
 
 describe('<BodySectionWithMarginBottom />', () => {
   
