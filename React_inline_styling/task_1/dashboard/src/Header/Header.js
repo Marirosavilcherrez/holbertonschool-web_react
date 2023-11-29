@@ -5,15 +5,15 @@ import { StyleSheet, css } from 'aphrodite';
 const Header = () => {
     
   return (
-      <div className= {css(styles.header)}>
-          <img src={logo} className={css(styles.logo)} alt="logo"/> 
-          <h1 className= {css(styles.title)}>School dashboard</h1>
+      <div className= {css(styles.headerStyle)}>
+          <img src={logo} className={css(styles.logoStyle)} alt="logo"/> 
+          <h1 className= {css(styles.titleStyle)}>School dashboard</h1>
       </div>
    )
 }
 
 const styles = StyleSheet.create ({
-    header: {
+    headerStyle: {
         display: 'flex',
         height: '30vh',
         color: '#e0344a',
@@ -23,11 +23,11 @@ const styles = StyleSheet.create ({
         top: 0,
     },
 
-    logo: {
+    logoStyle: {
         width: '144px',
     },
 
-    title: {
+    titleStyle: {
         margin: 0,
     },
 })
