@@ -3,7 +3,7 @@ import { StyleSheet, css } from 'aphrodite';
 
 const Login = () => {
     return (
-    <main className={css(styles.loginStyle)}>
+    <main className={css(styles.LoginStyle)}>
         <p>Login to access the full dashboard</p>
             <label htmlFor="email" className = {css(styles.labelStyle)}>Email: </label>
             <input type = "email" id="email" name="email" className = {css(styles.inputStyle)}/>
@@ -14,8 +14,8 @@ const Login = () => {
     );
 }
 
-const styles = StyleSheet.create ({
-    loginStyle: {
+const styles = StyleSheet.create({
+    LoginStyle: {
         backgroundcolor: '#FFFFFF',
         borderbottom: '3px solid red',
         display: 'flex',
